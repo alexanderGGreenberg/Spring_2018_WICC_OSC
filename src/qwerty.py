@@ -8,4 +8,11 @@
 # Assume that Jenny's intended message only contains letters
 
 def qwerty(message):
-    pass
+    qwerty = "`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:\"ZXCVBNM<>? "
+    dvorak = "`1234567890[]',.pyfgcrl/=\\aoeuidhtns-;qjkxbmwvz~!@#$%^&*(){}\"<>PYFGCRL?+|AOEUIDHTNS_:QJKXBMWVZ "
+    new = ""
+    for i in range(len(message)):
+      c = message[i]
+      n = qwerty[dvorak.index(c)]
+      new += n
+    return new
