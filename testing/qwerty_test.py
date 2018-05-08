@@ -14,7 +14,7 @@ class pythonTest(unittest.TestCase):
         self.assertEqual(qwerty.qwerty("c nrk. rl.b orgpj."), "i love open source")
     
     def test3(self):
-        self.assertEqual(qwerty.qwerty("lc .'gano ydp..", "pi equals three")
+        self.assertEqual(qwerty.qwerty("lc .'gano ydp.."), "pi equals three")
 
 if __name__ == '__main__':
     unittest.main()
